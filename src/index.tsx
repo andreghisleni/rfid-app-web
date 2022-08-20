@@ -8,7 +8,7 @@ import App from './App';
 
 if (process.env.NODE_ENV === 'production') {
   Sentry.init({
-    dsn: `https://${process.env.SENTRY_KEY}.ingest.sentry.io/${process.env.SENTRY_PROJECT}`,
+    dsn: `https://779104e80f0640c8b8a8621ba53d4fde@o306573.ingest.sentry.io/6671506`,
     integrations: [new Integrations.BrowserTracing()],
     tracesSampleRate: 1.0,
   });

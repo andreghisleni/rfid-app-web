@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 import { useField } from '@unform/core';
 
-import { IconBaseProps } from 'react-icons';
+import { IconType } from 'react-icons';
 
 import { FiAlertCircle } from 'react-icons/fi';
 import { FaRegCopy } from 'react-icons/fa';
@@ -20,7 +20,7 @@ import { useToast } from '../../hooks/toast';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   containerStyle?: object;
-  icon?: React.ComponentType<IconBaseProps>;
+  icon?: IconType;
   dark?: boolean;
   copy?: boolean;
   border?: boolean;

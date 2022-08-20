@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { useField } from '@unform/core';
 import ReactInputMask, { Props } from 'react-input-mask';
 
-import { IconBaseProps } from 'react-icons';
+import { IconType } from 'react-icons';
 
 import { FiAlertCircle } from 'react-icons/fi';
 import { Container, Error } from './styles';
@@ -10,7 +10,7 @@ import { Container, Error } from './styles';
 interface InputProps extends Props {
   name: string;
   containerStyle?: object;
-  icon?: React.ComponentType<IconBaseProps>;
+  icon?: IconType;
   maskPlaceholder?: string;
   dark?: boolean;
   border?: boolean;

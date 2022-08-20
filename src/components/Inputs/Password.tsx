@@ -3,7 +3,7 @@ import { useField } from '@unform/core';
 
 import zxcvbn from 'zxcvbn';
 
-import { IconBaseProps } from 'react-icons';
+import { IconType } from 'react-icons';
 
 import { FiAlertCircle } from 'react-icons/fi';
 import { Error } from './styles';
@@ -12,7 +12,7 @@ import { Container, SubContainer, PasswordForce } from './stylesPass';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   containerStyle?: object;
-  icon?: React.ComponentType<IconBaseProps>;
+  icon?: IconType;
   dark?: boolean;
   label?: string;
 }

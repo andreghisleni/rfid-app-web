@@ -11,7 +11,7 @@ import ReactSelect, {
 } from 'react-select';
 import { useField } from '@unform/core';
 
-import { IconBaseProps } from 'react-icons';
+import { IconType } from 'react-icons';
 
 import { FiAlertCircle } from 'react-icons/fi';
 import { Container, Error } from './styles';
@@ -19,7 +19,7 @@ import { Container, Error } from './styles';
 interface Props extends SelectProps<OptionTypeBase> {
   name: string;
   containerStyle?: object;
-  icon?: React.ComponentType<IconBaseProps>;
+  icon?: IconType;
   dark?: boolean;
   border?: boolean;
   label?: string;
